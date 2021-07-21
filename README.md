@@ -16,7 +16,6 @@ The submission will be ranked based on the accuracy.
 
 [MISSING]
 
-
 ## Submission Format
 Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Follow [this link](empty) to submit.
 
@@ -50,4 +49,4 @@ The participants are welcome to include further details of their approach, event
 ## Questions
 
 If you have a question about the challenge, please file a Github issue in this repository. This way the question and response will be visible to everyone.
-Subscribe to [this issue](empty) to get notified about changes to this document.
+Subscribe to [this issue](https://github.com/hemi86/hiltislamchallenge/issues/1) to get notified about changes to this document.
