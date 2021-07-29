@@ -22,7 +22,7 @@ The submission will be ranked based on the accuracy. A python script for self-ev
 [Coming soon]
 
 ## Submission Format
-Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Send your results to [Michael Helmberger](mailto:michael.helmberger@hilti.com?subject=[HILTI%20SLAM%20Challenge]%20Submission%20Team). **Submissions are not automatically published** – you can review the results and decide whether to publish by yourself. Submissions can also be withdrawn completely.
+Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Send your results to [Michael](mailto:michael.helmberger@hilti.com?subject=[HILTI%20SLAM%20Challenge]%20Submission%20Team). **Submissions are not automatically published** – you can review the results and decide whether to publish by yourself. Submissions can also be withdrawn completely.
 
 ### Estimated Trajectories
 The estimated trajectories should be stored in plain text files in the following format:
