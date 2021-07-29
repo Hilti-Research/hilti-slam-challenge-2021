@@ -1,23 +1,25 @@
-# XXXX SLAM Challenge
+# HILTI SLAM Challenge
 
-This is the Github repository for the SLAM challenge hosted at []. The main purpose of the repository is to allow easy discussion and the reporting of issues.
+This is the Github repository for the SLAM challenge hosted at https://www.hilti-challenge.com/. The main purpose of the repository is to allow easy discussion and the reporting of issues.
+
+![HILTI SLAM Challenge](https://github.com/hemi86/hiltislamchallenge/images/HILTI_SLAM_CHALLENGE_VISUAL.jpg)
 
 ## Description
-The participants are required to run their SLAM algorithms on sequences from the XXXXX-Challenge Dataset, which include images, IMU measurements, and LIDAR data recorded with a custom handheld device. The goal is to estimate the position of the handheld device as accurately as possible, utilizing any desired sensor combinations. The winner will be selected based on the accuracy of the estimated trajectories and will be awarded 7,000 USD and will also be invited to present his approach at the IROS 2021 Workshop "Perception and Navigation for Autonomous Robotics in Unstructured and Dynamic Environments" taking place on September 27th, 2021 in Prague.
+The participants are required to run their SLAM algorithms on sequences from the HILTI-Challenge Dataset, which includes images, IMU measurements, and LIDAR data recorded with a custom handheld device. The goal is to estimate the position of the handheld device as accurately as possible, utilizing any desired sensor combinations. The winner will be selected based on the accuracy of the estimated trajectories and will be awarded 7,000 USD and will also be invited to present his approach at the IROS 2021 Workshop "Perception and Navigation for Autonomous Robotics in Unstructured and Dynamic Environments" taking place on September 27th, 2021 in Prague. The second and third ranked teams will be awared  2,000 USD and 1,000 USD repectively.
 
 ## Deadline
 
-The **deadline to submit the estimated trajectories and report is September 25, 2021. Follow [this link](https://empty) to submit**.
+The **deadline to submit the estimated trajectories and report is September 25, 2021. Send your results to [Michael Helmberger](mailto:michael.helmberger@hilti.com?subject=[HILTI Slam Challenge]%20Submission%20TeamName)**.
 
 ## Evaluation Metric
-The submission will be ranked based on the accuracy. 
+The submission will be ranked based on the accuracy. A python script for self-evaluation will be provided here soon.
 
 ## Datasets
 
-[MISSING]
+[Coming soon]
 
 ## Submission Format
-Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Follow [this link](empty) to submit.
+Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Send your results to [Michael Helmberger](mailto:michael.helmberger@hilti.com?subject=[HILTI Slam Challenge]%20Submission%20TeamName)**. **Submissions are not automatically published** – you can review the results and decide whether to publish by yourself. Submissions can also be withdrawn completely.
 
 ### Estimated Trajectories
 The estimated trajectories should be stored in plain text files in the following format:
@@ -53,7 +55,7 @@ Subscribe to [this issue](https://github.com/hemi86/hiltislamchallenge/issues/1)
 
 ## Acknowledgement
 
-We would like to thank to thank Danwei Wang, Christian Laugier, Philippe Martinet, Yufeng Yue for hosting our challenge at the IROS2021 workshop “Perception and Navigation for Autonomous Robotics in Unstructured and Dynamic Environments”. Futher, we thank Prof. Davide Scaramuzza and Giovanni Coffi for the great support in organizing the challenge.
+We would like to thank to thank Danwei Wang, Christian Laugier, Philippe Martinet, Yufeng Yue for hosting our challenge at the IROS2021 workshop “Perception and Navigation for Autonomous Robotics in Unstructured and Dynamic Environments”. Futher, we thank Prof. Davide Scaramuzza and Giovanni Coffi for the great support in organizing the challenge, verifying the data and providing the [UZH FPV Challenge](https://fpv.ifi.uzh.ch/) as template for this challenge.
 
 
 
