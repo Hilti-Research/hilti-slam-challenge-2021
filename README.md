@@ -7,7 +7,8 @@ This is the Github repository for the SLAM challenge hosted at https://www.hilti
 </p>
 
 ## Description
-The participants are required to run their SLAM algorithms on sequences from the HILTI-Challenge Dataset, which includes images, IMU measurements, and LIDAR data recorded with a custom handheld device. The goal is to estimate the position of the handheld device as accurately as possible, utilizing any desired sensor combinations. The winner will be selected based on the accuracy of the estimated trajectories and will be awarded 7,000 USD and will also be invited to present his approach at the IROS 2021 Workshop "Perception and Navigation for Autonomous Robotics in Unstructured and Dynamic Environments" taking place on September 27th, 2021 in Prague. The second and third ranked teams will be awared  2,000 USD and 1,000 USD repectively.
+The participants are required to run their SLAM algorithms on sequences from the HILTI-Challenge Dataset, which includes images, IMU measurements, and LIDAR data recorded with a custom handheld device. The goal is to estimate the position of the handheld device as accurately as possible, utilizing any desired sensor combinations. The winner will be selected based on the accuracy of the estimated trajectories and will be awarded 7,000 USD and will also be invited to present his approach at the IROS 2021 Workshop "Perception and Navigation for Autonomous Robotics in Unstructured and Dynamic Environments" taking place on September 27th, 2021 in Prague. The second and third ranked teams will be awared  2,000 USD and 1,000 USD repectively. Only participants affiliated with educational institutions
+(Students, Postdocs, etc) are eligible to win the cash prize.
 
 ## Deadline
 
