@@ -36,7 +36,7 @@ The file names should be the same as the names of the bag/zip. For example, the 
 The pose is composed of translation (`tx` `ty` `tz`, in meters) and quaternion (in Hamilton quaternion, the `w` component is at the end). The pose should specify the pose of the IMU in the world frame. For example, after converting the pose to a transformation matrix `Twi`, one should be able to transform the homogeneous point coordinates in IMU frame to world frame as `pw = Twi * pi`.
 
 ### Report
-In addition to the estimated trajectories, the participants are required to submit a short report (maximum **4** pages, 10MB, pdf) summarizing their approach.
+In addition to the estimated trajectories, the participants are required to submit a short report summarizing their approach.
 The reports of all teams will be published on the website after the competition.
 The format of the report is left to the discretion of the participants, however the report must specify the following information:
 * A brief overview of the approach:
