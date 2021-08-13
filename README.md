@@ -13,22 +13,22 @@ The participants are required to run their SLAM algorithms on sequences from the
 
 ## Deadline
 
-The **deadline to submit the estimated trajectories and report is September 25, 2021**
+The **deadline to submit the estimated trajectories and report is September 27, 2021**
 
 ## Evaluation Metric
 The submission will be ranked based on the accuracy. A python script for self-evaluation will be provided here soon.
 
 ## Datasets
 
-[Coming soon]
+please visit 
 
 ## Submission Format
-Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Send your results to [Michael](mailto:michael.helmberger@hilti.com?subject=[HILTI%20SLAM%20Challenge]%20Submission%20Team). **Submissions are not automatically published** – you can review the results and decide whether to publish by yourself. Submissions can also be withdrawn completely.
+Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Send your results to [Email](mailto:michael.helmberger@hilti.com?subject=[HILTI%20SLAM%20Challenge]%20Submission%20Team). **Submissions are not automatically published** – you can review the results and decide whether to publish by yourself. Submissions can also be withdrawn completely.
 
 ### Estimated Trajectories
 The estimated trajectories should be stored in plain text files in the following format:
 
-    # timestamp tx ty tz qx qy qz qw
+    # timestamp_s tx ty tz qx qy qz qw
     1.403636580013555527e+09 0.0 0.0 0.0 0.0 0.0 0.0 0.0
     …… 
 
