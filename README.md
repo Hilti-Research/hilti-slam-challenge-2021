@@ -18,9 +18,13 @@ The **deadline to submit the estimated trajectories and report is September 27, 
 ## Evaluation Metric
 The submission will be ranked based on the accuracy. A python script for self-evaluation will be provided here soon.
 
+## Hardware
+
+Our sensor suite consists of a Sevensense Alphasense camera head, an Ouster OS0-64, a Livox MID70 and an ADIS16445 IMU. The sensors are mounted on a surveying pole for handheld operation. The syncronization between the sensors is done by a FPGA for the cameras and the ADIS16445 IMU. The cameras and the LIDARs are syncronized via PTP.
+
 ## Datasets
 
-please visit 
+please visit https://www.hilti-challenge.com/.
 
 ## Submission Format
 Each participant should submit the estimated trajectories for the above datasets and a report describing the adopted method. Send your results to [Email](mailto:michael.helmberger@hilti.com?subject=[HILTI%20SLAM%20Challenge]%20Submission%20Team). **Submissions are not automatically published** – you can review the results and decide whether to publish by yourself. Submissions can also be withdrawn completely.
