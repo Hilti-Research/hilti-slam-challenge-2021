@@ -14,6 +14,11 @@ The estimated trajectory can then be evaluated
 ```
 ./evaluation.py <estimation_tum> <reference_tum>
 ```
+For example:
+```
+./evaluation.py data/hdl_graph_slam/Lab_Survey_2.txt data/Lab_Survey_2_imu.txt
+```
+
 where all trajectories have to be provided in the TUM format 
 ```
 # timestamp_s tx ty tz qx qy qz qw
@@ -21,3 +26,4 @@ where all trajectories have to be provided in the TUM format
 …… 
 ```
 Names of the provided reference files should not be changed as they indicate which frame the reference is in.
+
