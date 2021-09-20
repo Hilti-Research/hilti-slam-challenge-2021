@@ -16,7 +16,7 @@ The estimated trajectory can then be evaluated
 ```
 For example:
 ```
-./evaluation.py data/hdl_graph_slam/Lab_Survey_2.txt data/Lab_Survey_2_imu.txt
+./evaluation.py data/hdl_graph_slam/LAB_Survey_2.txt data/LAB_Survey_2_imu.txt
 ```
 
 where all trajectories have to be provided in the TUM format 

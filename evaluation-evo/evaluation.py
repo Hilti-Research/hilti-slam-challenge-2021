@@ -113,44 +113,34 @@ if __name__ == "__main__":
     if apply_pole_tip_calibration == True:
         calibration_type = ref_file.split('_')[-1].lower()
         if calibration_type == 'pole.txt':
-            # get the value by tf tf_echo /imu /pole_tip
-            x=-0.009
-            y=-0.015
-            z=1.667
-            # the values need to be inverted since we are interested in the distance pole_tip to imu (but in imu frame)
-            calibration = np.array([[-x], [-y], [-z], [1]])
-
-
-            # calibration = np.array([[0.0085], [-0.006], [-1.6847], [1]])
+            T_imu_ref = np.array([[  0.176566,   -0.984288, 0.00121622, -0.00938425],
+                                  [ -0.984256,    -0.17655, 0.00837907,  -0.0148401],
+                                  [-0.0080327, -0.00267653,  -0.999964,     1.66722],
+                                  [         0,           0,          0,         1.0]])
         elif calibration_type == 'prism.txt':
-            # get the value by tf tf_echo /imu /prism
-            x=--0.006
-            y=-0.007
-            z=0.273
-            # the values need to be inverted since we are interested in the distance prism to imu (but in imu frame)
-            calibration = np.array([[-x], [-y], [-z], [1]])
+            T_imu_ref = np.array([[  0.176566,   -0.984288, 0.00121622, -0.00594496],
+                                  [ -0.984256,    -0.17655, 0.00837907, -0.00721288],
+                                  [-0.0080327, -0.00267653,  -0.999964,    0.272943],
+                                  [         0,           0,          0,         1.0]])
         elif calibration_type == 'imu.txt':
-             calibration = np.array([[0], [0], [0], [1]])
-
+            T_imu_ref = np.identity(4)
         else:
             print("reference file has non supported calibration type. Please don't change the reference file names.")
             exit()
         data = np.genfromtxt(est_file, delimiter=' ', skip_header=False)
-        stamps = data[:, 0]  # n x 1
-        xyz = data[:, 1:4]  # n x 3
-        quat = data[:, 4:]  # n x 4
-        traj_est_no_cal = PoseTrajectory3D(xyz, quat, stamps)
+
         for i in range(data.shape[0]):
-            rot_mat = R.from_quat([data[i, 4:8]]).as_matrix().reshape([3, 3])
+            rot_mat = R.from_quat([data[i, 4:8]]).as_matrix().reshape([3, 3]) # from_quat(), xyzw
             transl = data[i, 1:4].reshape([3, 1])
             homogeneous_transform = np.vstack([np.hstack([rot_mat, transl]), np.array([0, 0, 0, 1])])
-            result = (homogeneous_transform @ (calibration))[:3].reshape([3, ])
-            data[i, 1:4] = result
+            result = homogeneous_transform @ T_imu_ref
+            data[i, 1:4] = result[0:3,3].reshape([1, 3])
+            data[i, 4:] = R.from_matrix(result[0:3,0:3]).as_quat()
 
         stamps = data[:, 0]  # n x 1
         xyz = data[:, 1:4]  # n x 3
-        quat = data[:, 4:]  # n x 4
-        traj_est = PoseTrajectory3D(xyz, quat, stamps)
+        quat_wxyz = data[:, [7,4,5,6]] # n x 4
+        traj_est = PoseTrajectory3D(xyz, quat_wxyz, stamps) # PoseTrajectory3D(), wxyz
 
     else:
         traj_est = file_interface.read_tum_trajectory_file(est_file)
