@@ -12,7 +12,7 @@ The participants are required to run their SLAM algorithms on sequences from the
 
 ## Deadline
 
-The **deadline to submit the estimated trajectories and report is September 25, 2021**
+The **deadline to submit the estimated trajectories and report is Sept 25th 2021 23:59:59 UTC!**
 
 ## Evaluation Metric
 The submission will be ranked based on the completeness and accuracy of the estimated trajectories. 
