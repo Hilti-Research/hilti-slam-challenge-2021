@@ -59,6 +59,19 @@ The participants are welcome to include further details of their approach, event
 If you have a question about the challenge, please file a Github issue in this repository. This way the question and response will be visible to everyone.
 Subscribe to [this issue](https://github.com/hemi86/hiltislamchallenge/issues/1) to get notified about changes to this document.
 
+## Publication
+
+When using this work in an academic context, please cite the following publication:
+
+~~~
+@misc{2109.11316,
+Author = {Michael Helmberger and Kristian Morin and Nitish Kumar and Danwei Wang and Yufeng Yue and Giovanni Cioffi and Davide Scaramuzza},
+Title = {The Hilti SLAM Challenge Dataset},
+Year = {2021},
+Eprint = {arXiv:2109.11316},
+}
+~~~
+
 ## Acknowledgement
 
 We would like to thank to thank Danwei Wang, Christian Laugier, Philippe Martinet, Yufeng Yue for hosting our challenge at the IROS2021 workshop “Perception and Navigation for Autonomous Robotics in Unstructured and Dynamic Environments”. Futher, we thank Prof. Davide Scaramuzza and Giovanni Coffi for the great support in organizing the challenge, verifying the data and providing the [UZH FPV Challenge](https://fpv.ifi.uzh.ch/) as template for this challenge.
