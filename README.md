@@ -1,4 +1,4 @@
-# The HILTI SLAM Challenge
+# The Hilti SLAM Challenge
 
 <p align="center">
   <img src="https://github.com/hemi86/hiltislamchallenge/blob/be56ed92d5415dff49e53b58bbeab019f923f883/images/HILTI_SLAM_CHALLENGE_VISUAL.jpg"  width="70%"  alt="HILTI SLAM Challeng"/>
