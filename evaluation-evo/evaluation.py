@@ -92,19 +92,27 @@ def trajectories_custom(fig: plt.Figure, trajectories: typing.Union[
 
 
 if __name__ == "__main__":
+    save_file = None
 
     # check if files where provided in the command line argument
     if len(sys.argv) > 1:
         est_file = sys.argv[1]
         ref_file = sys.argv[2]
+        try:
+            save_file = sys.argv[3]
+        except:
+            pass
     else:
         # uncomment if hardcoded filepaths should be used
         # ref_file = 'path'
         # est_file = 'path'
 
         # comment if hardcoded filepaths should be used
-        print('use: ./evaluation.py tum_est_file tum_ref_file')
+        print('use: ./evaluation.py tum_est_file tum_ref_file <save_plot_file>')
         exit()
+    
+    # Plot collection for exporting svg function
+    plot_collection = plot.PlotCollection("Export")
 
     traj_ref = file_interface.read_tum_trajectory_file(ref_file)
 
@@ -187,8 +195,10 @@ if __name__ == "__main__":
             "reference": traj_ref_sync
         }
         trajectories_custom(fig, traj_by_label, plot.PlotMode.xyz)
-
-
+    
+    if save_file:
+        plot_collection.add_figure("correspondences", fig)
+    
     plt.show()
 
     seconds_from_start = [t - traj_est.timestamps[0] for t in traj_est_sync.timestamps]
@@ -204,4 +214,9 @@ if __name__ == "__main__":
                          statistics={s: v for s, v in ape_stats.items() if s != "sse"},
                          name="APE", title="APE w.r.t. " + ape_metric.pose_relation.value, xlabel="$t$ (s)", marker='o',
                          linestyle='dotted')
+
+    if save_file:
+        plot_collection.add_figure("trajectories", fig)
+        plot_collection.export(save_file, confirm_overwrite=True)
+    
     plt.show()
