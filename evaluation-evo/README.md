@@ -12,12 +12,17 @@ pip3 install -r requirements.txt
 The estimated trajectory can then be evaluated
 
 ```
-./evaluation.py <estimation_tum> <reference_tum>
+./evaluation.py <estimation_tum> <reference_tum> [save_plot_path]
 ```
 For example:
 ```
 ./evaluation.py data/hdl_graph_slam/LAB_Survey_2.txt data/LAB_Survey_2_imu.txt
 ```
+to save plots:
+```
+./evaluation.py data/hdl_graph_slam/LAB_Survey_2.txt data/LAB_Survey_2_imu.txt export.png
+```
+
 
 where all trajectories have to be provided in the TUM format 
 ```
