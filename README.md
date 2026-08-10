@@ -1,7 +1,7 @@
 # The Hilti SLAM Challenge
 
 <p align="center">
-  <a href="https://huggingface.co/datasets/Hilti-Research/slam-challenge-2021"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="Hugging Face Dataset"/></a>
+  <a href="https://huggingface.co/datasets/Hilti-Research/hilti-slam-challenge-2021"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="Hugging Face Dataset"/></a>
   <a href="https://arxiv.org/abs/2109.11316"><img src="https://img.shields.io/badge/arXiv-2109.11316-b31b1b" alt="arXiv"/></a>
   <a href="https://www.hilti-challenge.com/"><img src="https://img.shields.io/badge/Webpage-hilti--challenge.com-blue" alt="Webpage"/></a>
 </p>
@@ -22,7 +22,7 @@ Please visit https://www.hilti-challenge.com/ for the leaderboard.
 
 ## Datasets
 
-The datasets along with the corresponding ground truth sequences can be downloaded [here](https://huggingface.co/datasets/Hilti-Research/slam-challenge-2021).
+The datasets along with the corresponding ground truth sequences can be downloaded [here](https://huggingface.co/datasets/Hilti-Research/hilti-slam-challenge-2021).
 
 ## Publication
 
